@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/sass/index.css">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include the JQuery CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <title></title>
+  <!-- Using JQuery to load files-->
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#landingpage").load("landing.html")
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="logo"><a href="/">My Website</a></h1>
-    <nav>
-        <ul class="main-nav">
-          <li class="nav-links">
-            <a to="/">Home</a>
-          </li>
-          <li>
-            <a to="/contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>  
+  <div id="header"></div>
+  <div id = "landingpage"></div>
+  <div id ="footer"></div>
 </body>
+
 </html>
