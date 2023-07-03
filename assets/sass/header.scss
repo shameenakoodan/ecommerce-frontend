@@ -21,9 +21,10 @@ ul {
       text-transform: uppercase;
       text-align: center;
       display: block;
+      color: #f4f4f4;
   }
   .main-nav a {
-      color: #34495e;
+      color:#f4f4f4;
       font-size: 2vh;
   }
   
@@ -34,12 +35,13 @@ ul {
   
   
   .header {
-      padding-top: .5em;
-      padding-bottom: .5em;
-      border: 1px solid #a2a2a2;
-      background-color: #f4f4f4;
-      box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      border-radius: 5px;
+    color:wheat;
+     // padding-top: .5em;
+     // padding-bottom: .5em;
+      border-bottom: 1px solid #a2a2a2;
+      background-color:#01161E;
+     // box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+     // border-radius: 5px;
   }
   
   
