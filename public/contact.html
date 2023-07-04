@@ -17,7 +17,18 @@
     <div id="header"></div>
     <div id="contactform">
         <h1>Contact Us</h1>
-        
+        <form onsubmit="return(formvalidate());" name="contactform" method="POST" id="contactform">
+            <label for="firstname">First Name (required)</label> 
+            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+            <label for="lastname">Last Name (required)</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+            <label for="email">Email (required)</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <span>What is your question ?</span>
+            <textarea name="question" id="question" cols="30" rows="4"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+
     </div>
     <div id ="footer"></div>
 </body>
