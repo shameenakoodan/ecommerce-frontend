@@ -1,0 +1,13 @@
+.footer {
+  color: wheat;
+  border-bottom: 1px solid #a2a2a2;
+  background-color: #01161E;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}/*# sourceMappingURL=footer.css.map */

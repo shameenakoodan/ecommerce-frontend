@@ -7,12 +7,14 @@
   <!-- Include the JQuery CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel="stylesheet" href="../assets/sass/index.css">
+  <script src="../src/js/index.js"></script>
   <title></title>
   <!-- Using JQuery to load files-->
   <script>
     $(function () {
       $("#header").load("header.html");
       $("#landingpage").load("landing.html")
+      $("#productdisplay").load("productdisplay.html")
       $("#footer").load("footer.html");
     });
   </script>
@@ -21,6 +23,7 @@
 <body>
   <div id="header"></div>
   <div id = "landingpage"></div>
+  <div id="productdisplay"></div>
   <div id ="footer"></div>
 </body>
 
