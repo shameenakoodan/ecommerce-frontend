@@ -1,4 +1,4 @@
-ul {
+/*ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -46,7 +46,7 @@ ul {
   /* ================================= 
     Media Queries
   ==================================== */
-  @media (min-width: 769px) {
+  /*@media (min-width: 769px) {
       .header,
       .main-nav {
           display: flex;
@@ -68,4 +68,53 @@ ul {
           flex-direction: row;
           justify-content: space-between;
       }
+  }*/
+  *{
+    margin: 0;
+    padding: 0;
   }
+  header{
+    //background-color:#01161E;
+}
+ul{
+    border-bottom: 1px solid white;
+}
+    nav > ul {
+        //width: 75%;
+        display: flex;
+        list-style-type: none;
+        padding: 14px 116px 14px 111px  ;
+        /*When three values are specified, the first margin applies to the top, the second to the right and left, the third to the bottom.*/
+        color: #f4f4f4;
+        justify-content:space-between;
+        background: #01161E;
+
+    }
+    a:visited { 
+        text-decoration: none; 
+        color: #f4f4f4; 
+        //color: black;
+       }
+    li a {
+        padding: 10px 30px;
+        text-decoration: none;
+
+    }
+
+    .link1{
+        margin-right: auto;
+    }
+    .link1 a{
+        font-size:x-large;
+        font-weight: bold;
+    }
+    .link2{
+        
+    }
+    .link3{
+        
+    }
+    .link4{
+    }
+    .link5{
+    }

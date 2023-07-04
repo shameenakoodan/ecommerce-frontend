@@ -7,10 +7,15 @@
   <!-- Include the JQuery CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel="stylesheet" href="../assets/sass/index.css">
-  <script src="../src/js/index.js"></script>
-  <title></title>
+  
+  <title>Lorem ipsum</title>
+
   <!-- Using JQuery to load files-->
   <script>
+    document.write('<style type="text/css">body{display:none}</style>');
+    jQuery(function ($) {
+      $('body').css('display', 'block');
+    });
     $(function () {
       $("#header").load("header.html");
       $("#landingpage").load("landing.html")
@@ -22,9 +27,9 @@
 
 <body>
   <div id="header"></div>
-  <div id = "landingpage"></div>
+  <div id="landingpage"></div>
   <div id="productdisplay"></div>
-  <div id ="footer"></div>
+  <div id="footer"></div>
 </body>
 
 </html>

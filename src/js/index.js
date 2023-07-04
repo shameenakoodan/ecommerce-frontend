@@ -1,4 +1,4 @@
-const url = 'https://real-time-amazon-data.p.rapidapi.com/search?query=Phone&page=1&country=US&category_id=aps';
+/*const url = 'https://real-time-amazon-data.p.rapidapi.com/search?query=Phone&page=1&country=US&category_id=aps';
 const options = {
 	method: 'GET',
 	headers: {
@@ -14,4 +14,4 @@ try {
     })
 } catch (error) {
 	console.error(error);
-}
+}*/

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../assets/sass/contact.css">
+    <script src="../src/js/contact.js"></script>
     <title>Document</title>
     <script>
         $(function () {
@@ -15,17 +16,17 @@
 </head>
 <body>
     <div id="header"></div>
-    <div id="contactform">
+    <div id="form">
         <h1>Contact Us</h1>
-        <form onsubmit="return(formvalidate());" name="contactform" method="POST" id="contactform">
+        <form onsubmit="submitContact()" name="contactform" method="POST" id="contactform">
             <label for="firstname">First Name (required)</label> 
             <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
             <label for="lastname">Last Name (required)</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name">
+            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
             <label for="email">Email (required)</label>
-            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="email" name="email" id="email" placeholder="Email" required>
             <span>What is your question ?</span>
-            <textarea name="question" id="question" cols="30" rows="4"></textarea>
+            <textarea name="question" id="question" cols="30" rows="4" required></textarea>
             <input type="submit" value="Submit">
         </form>
 
