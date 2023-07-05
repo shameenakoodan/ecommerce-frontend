@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../assets/sass/contact.css">
-    <script src="../src/js/contact.js"></script>
+    <script src="../src/js/signup.js"></script>
     <title>Contact Us</title>
     <style>
         #max-width-form{
@@ -31,9 +31,9 @@
     <div id="form">
         <h1>Sign Up</h1>
         <div id="success">
-            <h1>Your Form has been Submitted...</h1>
+            <h1>Your have succesfully signed in ...</h1>
         </div>
-        <form action="#" onsubmit="event.preventDefault(); submissionmMessage();" name="contactform" method="POST"
+        <form action="#" onsubmit="event.preventDefault(); signUpMessage();" name="signup" method="POST"
             id="signup">
             <div id="max-width-form">
             <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
@@ -57,7 +57,7 @@
             </div>
             <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                 <label for="email">Re type Email (required)</label>
-                <input type="email" name="EmailTwo" placeholder="Email with type email" required />
+                <input type="email" name="email2" placeholder="Re type email" required id="email2"/>
             </div>
             <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
                 <label for="zip">Zip Code (required)</label>
