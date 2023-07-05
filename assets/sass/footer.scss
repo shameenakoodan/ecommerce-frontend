@@ -1,26 +1,32 @@
 .footer {
     color: wheat;
-    background-color:#0a0a0a;
+    background-color: #0a0a0a;
     display: flex;
     flex-direction: row;
+    
 }
-.main-div-footer ul{
+
+.main-div-footer ul {
     border: none;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-.main-div-footer{
-   margin-left: 10%;
-   margin-top: 2%;
-   margin-bottom: 2%;
+
+.main-div-footer {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
-.main-div-footer-right{
+
+.main-div-footer-right {
     margin-left: 0px;
-   margin-top: 2%;
-   margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
+
 table {
     table-layout: fixed;
     width: 100%;
