@@ -74,8 +74,8 @@
     padding: 0;
   }
   header{
-    //background-color:#01161E;
-}
+    background-color:#0a0a0a;
+    }
 ul{
     border-bottom: 1px solid white;
 }
@@ -87,7 +87,7 @@ ul{
         /*When three values are specified, the first margin applies to the top, the second to the right and left, the third to the bottom.*/
         color: #f4f4f4;
         justify-content:space-between;
-        background: #01161E;
+        background:#0a0a0a;
 
     }
     a:visited { 
@@ -107,14 +107,4 @@ ul{
     .link1 a{
         font-size:x-large;
         font-weight: bold;
-    }
-    .link2{
-        
-    }
-    .link3{
-        
-    }
-    .link4{
-    }
-    .link5{
     }

@@ -2,11 +2,21 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  justify-content: space-around;
+  /*centers items on the line (the x-axis by default)*/
+  gap: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+a {
+  color: black;
 }
 
 .product-card {
-  max-width: 36rem;
+  min-width: 20rem;
+  min-height: 15rem;
+  background: #efefef;
   opacity: 0.9;
   color: black;
   border: none;
@@ -16,10 +26,31 @@
 }
 
 .product-card img {
-  width: 6rem;
-  height: 15rem;
+  width: 256px;
+  padding: 5px;
+  filter: drop-shadow(10px 10px 10px gray);
+}
+
+.product-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  position: absolute;
 }
 
 .product-card:hover {
   opacity: 1;
+}
+
+#productdisplay {
+  display: flex;
+  justify-content: center;
+}
+
+.pro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }/*# sourceMappingURL=productdisplay.css.map */
