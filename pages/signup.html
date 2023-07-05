@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/sass/contact.css">
+    <script src="../src/js/contact.js"></script>
+    <title>Contact Us</title>
+    <style>
+        #max-width-form{
+            max-width: 75%;
+        }
+        form {
+    width: 75%;
+  background: gray;
+  margin: 0 auto;
+}
+    </style>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="form">
+        <h1>Sign Up</h1>
+        <div id="success">
+            <h1>Your Form has been Submitted...</h1>
+        </div>
+        <form action="#" onsubmit="event.preventDefault(); submissionmMessage();" name="contactform" method="POST"
+            id="signup">
+            <div id="max-width-form">
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="username">User Name (required)</label>
+                <input type="text" name="username" placeholder="Enter a username" pattern="^[a-zA-Z]+"
+                    title="Please start username with a letter from a-z " required />
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="firstname">First Name (required)</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="lastname">Last Name (required)</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="email">Email (required)</label>
+                <input type="email" name="email" id="email" placeholder="Email"
+                    title="please start with letter and follow name@mail.com"
+                    pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$" required />
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="email">Re type Email (required)</label>
+                <input type="email" name="EmailTwo" placeholder="Email with type email" required />
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="zip">Zip Code (required)</label>
+                <input type="tel" name="Zip" min="5" maxlength="5" id="ZipID" placeholder="Enter Zip Code"
+                    pattern="\d{5}" title="Five digits only" required />
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="date">Date</label>
+                <input type="date" id="date" value="2024-12-31" min="1910-01-01" max="2024-12-31"
+                    placeholder="Date of Birth" required />
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="country">Country</label>
+                <select name="Country" id="CountryId" required>
+                    <option value=""> [choose yours] | Select Country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="UAE">UAE</option>
+                </select>
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required />
+            </div>
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

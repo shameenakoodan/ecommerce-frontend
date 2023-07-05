@@ -5,7 +5,11 @@ body {
 
 input[type=text],
 input[type=email],
+input[type=tel],
+input[type=date],
+input[type=password],
 select,
+option,
 textarea {
   width: 80%;
   padding: 12px;
@@ -54,4 +58,11 @@ input[type=submit]:hover {
 }
 #form:first-child{
   background: green;
+}
+#signup {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  //display: none;
 }
