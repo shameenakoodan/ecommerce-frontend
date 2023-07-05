@@ -9,10 +9,6 @@
   margin-bottom: 10%;
 }
 
-a {
-  color: black;
-}
-
 .product-card {
   min-width: 20rem;
   min-height: 15rem;
@@ -59,4 +55,4 @@ a {
   border: none;
   color: #d87c49;
   font-size: larger;
-}/*# sourceMappingURL=productdisplay.css.map */
+}
