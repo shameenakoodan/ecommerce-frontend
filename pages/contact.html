@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../assets/sass/contact.css">
     <script src="../src/js/contact.js"></script>
-    <title>Document</title>
+    <title>Contact Us</title>
     <script>
         $(function () {
           $("#header").load("header.html");
@@ -18,7 +18,8 @@
     <div id="header"></div>
     <div id="form">
         <h1>Contact Us</h1>
-        <form onsubmit="submitContact()" name="contactform" method="POST" id="contactform">
+        <div id="success">Your Form has been Submitted.</div>
+        <form action="#" onsubmit="event.preventDefault(); submissionmMessage();" name="contactform" method="POST" id="contactform">
             <label for="firstname">First Name (required)</label> 
             <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
             <label for="lastname">Last Name (required)</label>
@@ -29,7 +30,6 @@
             <textarea name="question" id="question" cols="30" rows="4" required></textarea>
             <input type="submit" value="Submit">
         </form>
-
     </div>
     <div id ="footer"></div>
 </body>

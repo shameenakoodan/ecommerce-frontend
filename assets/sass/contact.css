@@ -2,7 +2,10 @@ body {
   margin: 0;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+input[type=email],
+select,
+textarea {
   width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -37,4 +40,8 @@ input[type=submit]:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#success {
+  display: none;
 }/*# sourceMappingURL=contact.css.map */
