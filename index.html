@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Include the JQuery CDN-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="../assets/sass/index.css">
+  <link rel="stylesheet" href="assets/sass/index.css">
   <script src="../src/js/index.js"></script>
   <title>Lorem ipsum</title>
 
@@ -17,10 +17,10 @@
       $('body').css('display', 'block');
     });
     $(function () {
-      $("#header").load("header.html");
-      $("#landingpage").load("landing.html")
-      $("#productdisplay").load("productdisplay.html")
-      $("#footer").load("footer.html");
+      $("#header").load("/pages/header.html");
+      $("#landingpage").load("/pages/landing.html")
+      $("#productdisplay").load("/pages/productdisplay.html")
+      $("#footer").load("/pages/footer.html");
     });
   </script>
 </head>
