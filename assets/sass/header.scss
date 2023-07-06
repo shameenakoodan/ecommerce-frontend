@@ -1,109 +1,48 @@
-/*ul {
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
-  }
-  a {
-      color: #34495e;
-      text-decoration: none;
-  }
-  .logo {
-      margin: 0;
-      font-size: 1.45em;
-  }
-  .main-nav {
-      margin-top: 5px;
-  
-  }
-  .logo a,
-  .main-nav a {
-      padding: 10px 15px;
-      text-transform: uppercase;
-      text-align: center;
-      display: block;
-      color: #f4f4f4;
-  }
-  .main-nav a {
-      color:#f4f4f4;
-      font-size: 2vh;
-  }
-  
-  .main-nav a:hover {
-      color: #718daa;
-  }
-  
-  
-  
-  .header {
-    color:wheat;
-     // padding-top: .5em;
-     // padding-bottom: .5em;
-      border-bottom: 1px solid #a2a2a2;
-      background-color:#01161E;
-     // box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-     // border-radius: 5px;
-  }
-  /* ================================= 
-    Media Queries
-  ==================================== */
-  /*@media (min-width: 769px) {
-      .header,
-      .main-nav {
-          display: flex;
-      }
-      .header {
-          flex-direction: column;
-          align-items: center;
-          .header{
-          width: 80%;
-          margin: 0 auto;
-          max-width: 1150px;
-      }
-      }
-  
-  }
-  
-  @media (min-width: 1025px) {
-      .header {
-          flex-direction: row;
-          justify-content: space-between;
-      }
-  }*/
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  header{
-    background-color:#0a0a0a;
-    }
-ul{
+}
+header {
+    background-color: #0a0a0a;
+}
+ul {
     border-bottom: 1px solid white;
 }
-    nav > ul {
-        //width: 75%;
-        display: flex;
-        list-style-type: none;
-        padding: 14px 116px 14px 111px  ;
-        color: #f4f4f4;
-        justify-content:space-between;
-        background:#0a0a0a;
+nav>ul {
+    //width: 75%;
+    display: flex;
+    list-style-type: none;
+    padding: 14px 116px 14px 111px;
+    color: #f4f4f4;
+    justify-content: space-between;
+    background: #0a0a0a;
+}
 
-    }
-    a:visited { 
-        text-decoration: none; 
-        color: #f4f4f4; 
-        //color: black;
-       }
-    li a {
-        padding: 10px 30px;
-        text-decoration: none;
+a:visited {
+    text-decoration: none;
+    color: #f4f4f4;
+    //color: black;
+}
 
-    }
+li a {
+    padding: 10px 30px;
+    text-decoration: none;
 
-    .link1{
-        margin-right: auto;
+}
+
+.link1 {
+    margin-right: auto;
+}
+
+.link1 a {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    nav>ul {
+        padding: 14px 116px 14px 111px;
+        flex-direction: column;
+        width: 100%;
     }
-    .link1 a{
-        font-size:x-large;
-        font-weight: bold;
-    }
+}
