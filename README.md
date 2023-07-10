@@ -12,7 +12,7 @@ This website is designed with HTML , CSS and Javascript.
 * Use different types of content in the form of text, images, videos, and GIFs
 * Use regex validation
 
-#CSS
+# CSS
 
 * Inline, internal, and external styling
 * Use five different CSS selectors
